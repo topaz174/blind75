@@ -1,6 +1,4 @@
-# 🚀 LeetCode Journey
-
-## Season 1: Arrays & Hashing
+## Chapter 1: Arrays & Hashing
 | ID | Problem | Diff | Status | Solo? | Time | The Core Trick |
 |:---|:---|:---:|:---:|:---:|:---:|:---|
 | 217 | [Contains Duplicate](./01_Arrays_and_Hashing/217_Contains_Duplicate/) | 🟢 | ✅ | 💡 | - | Use `unordered_set`. |
@@ -12,7 +10,7 @@
 | 238 | [Product of Array Except Self](./01_Arrays_and_Hashing/238_Product_Of_Array_Except_Self/) | 🟡 | ✅ | 💡 | - | Prefix and suffix products. |
 | 128 | [Longest Consec](./01_Arrays_and_Hashing/128_Longest_Consecutive_Sequence/) | 🟡 | ✅ | 💡 | - | Ask HashSet if `curr - 1` exists to skip middle pieces. Pure O(N). |
 
-## Season 2: Two Pointers
+## Chapter 2: Two Pointers
 | ID | Problem | Diff | Status | Solo? | Time | The Core Trick |
 |:---|:---|:---:|:---:|:---:|:---:|:---|
 | 125 | [Valid Palindrome](./02_Two_Pointers/125_Valid_Palindrome/) | 🟢 | ✅ | 🧠 | 3hrs | Two pointers skip non-alnum + `f < b`. |
