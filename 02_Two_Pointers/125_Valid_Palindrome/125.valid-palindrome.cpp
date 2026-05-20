@@ -26,13 +26,11 @@ public:
             do {
                 front = tolower(s[f]);
                 f++;
-                cout << front << " ";
             } while (!isalnum(front) && (f < s.length()));
 
             do {
                 back = tolower(s[b]);
                 b--;
-                cout << back << "\n";
             } while (!isalnum(back) && (b >= 0));
 
             if (!isalnum(front)) {
