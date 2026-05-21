@@ -16,3 +16,8 @@
 | 125 | [Valid Palindrome](./02_Two_Pointers/125_Valid_Palindrome/) | May 14 | 🟢 | ✅ | 🧠 | 3hrs | 6 | 6.5 | Two pointers skip non-alnum + `f < b`. |
 | 015 | [3Sum](./02_Two_Pointers/015_3Sum/) | May 16 | 🟡 | ✅ | 💡 | 7hrs | 8 | 9 | Sort + Two Pointers skip duplicates. |
 | 011 | [Container With Most Water](./02_Two_Pointers/011_Container_With_Most_Water/) | May 21 | 🟡 | ✅ | 🧠 | 45m | 3 | 7.5 | Two pointers, move smaller height. |
+
+## Chapter 3: Sliding Window
+| ID  | Problem | Date | Diff | Status | Solo? | Time | Diff (10) | Fun (10) | The Core Trick |
+| :-- | :--- | :---: | :--: | :----: | :---: | :--: | :---: | :---: | :--- |
+| 121 | [Best Time to Buy and Sell Stock](./03_Sliding_Window/121_Best_Time_To_Buy_And_Sell_Stock/) | May 22 | 🟢 | ✅ | 🧠 | - | 3.5 | 7 | Track minPrice so far, update maxProfit. |

@@ -214,6 +214,10 @@
   },
   "active": "5c445312fe663473",
   "lastOpenFiles": [
+    "03_Sliding_Window/121_Best_Time_To_Buy_And_Sell_Stock/notes.md",
+    "03_Sliding_Window/121_Best_Time_To_Buy_And_Sell_Stock/121.best-time-to-buy-and-sell-stock.cpp",
+    "03_Sliding_Window/121_Best_Time_To_Buy_And_Sell_Stock",
+    "03_Sliding_Window",
     "121.best-time-to-buy-and-sell-stock.cpp",
     "02_Two_Pointers/011_Container_With_Most_Water/11.container-with-most-water.excalidraw",
     "11.container-with-most-water.excalidraw",
@@ -223,10 +227,6 @@
     "02_Two_Pointers/011_Container_With_Most_Water",
     "Untitled-2.excalidraw",
     "02_Two_Pointers/015_3Sum/notes.md",
-    "02_Two_Pointers/015_3Sum/15.3-sum.excalidraw",
-    "3sum.excalidraw",
-    "02_Two_Pointers/015_3Sum/15.3-sum.cpp",
-    "02_Two_Pointers/015_3Sum",
     "README.md"
   ]
 }
