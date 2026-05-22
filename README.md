@@ -21,3 +21,4 @@
 | ID  | Problem | Date | Diff | Status | Solo? | Time | Diff (10) | Fun (10) | The Core Trick |
 | :-- | :--- | :---: | :--: | :----: | :---: | :--: | :---: | :---: | :--- |
 | 121 | [Best Time to Buy and Sell Stock](./03_Sliding_Window/121_Best_Time_To_Buy_And_Sell_Stock/) | May 22 | 🟢 | ✅ | 🧠 | - | 3.5 | 7 | Track minPrice so far, update maxProfit. |
+| 003 | [Longest Substring Without Repeating Characters](./03_Sliding_Window/003_Longest_Substring_Without_Repeating_Characters/) | May 23 | 🟡 | ✅ | 🧠 | < 2hrs | 5 | 8 | Sliding window + Set; move `l` past duplicate. |
