@@ -6,7 +6,6 @@
 
 // @lc code=start
 
-#include <string>
 #include <unordered_set>
 #include <algorithm>
 
@@ -23,7 +22,13 @@ public:
 
         unordered_set<char> chars = {s[l]};
 
-        while (r < (int)s.length()) {
+        while (r < s.length()) {
+            // if (chars.count(s[r]) && (l == 0 || (s[l - 1] != s[l] && s[l - 1] != s[r]))) {
+            //     cout << "pean" << endl;
+            //     l++;
+            //     continue;
+            // }
+
             if (chars.count(s[r])) {
                 for (int i = 0; i <= (r - l); ++i) {
                     if (i != 0 && s[l + i - 1] == s[r]) {
