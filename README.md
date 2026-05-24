@@ -20,8 +20,8 @@
 ## Chapter 3: Sliding Window
 | ID  | Problem | Date | Diff | Status | Solo? | Time | Diff (10) | Fun (10) | The Core Trick |
 | :-- | :--- | :---: | :--: | :----: | :---: | :--: | :---: | :---: | :--- |
-| 121 | [Best Time to Buy and Sell Stock](./03_Sliding_Window/121_Best_Time_To_Buy_And_Sell_Stock/) | May 22 | 🟢 | ✅ | 🧠 | - | 3.5 | 7 | Track minPrice so far, update maxProfit. |
+| 121 | [Best Time to Buy and Sell Stock](./03_Sliding_Window/121_Best_Time_To_Buy_And_Sell_Stock/) | May 22 | 🟢 | ✅ | 🧠 | 45m | 3.5 | 7 | Track minPrice so far, update maxProfit. |
 | 003 | [Longest Substring Without Repeating Characters](./03_Sliding_Window/003_Longest_Substring_Without_Repeating_Characters/) | May 23 | 🟡 | ✅ | 🧠 | < 2hrs | 5 | 8 | Sliding window + Set; move `l` past duplicate. |
 | 424 | [Longest Repeating Character Replacement](./03_Sliding_Window/424_Longest_Repeating_Character_Replacement/) | May 24 | 🟡 | ✅ | 🧠 | 7hrs | 9 | 10 | Window valid if (size - maxFreq) <= k. |
-| 076 | [Minimum Window Substring](./03_Sliding_Window/076_Minimum_Window_Substring/) | May 24 | 🔴 | ✅ | 🧠 | 5hrs | 8 | 9.5 | Score variable + Negative frequencies for surplus. |
+| 076 | [Minimum Window Substring](./03_Sliding_Window/076_Minimum_Window_Substring/) | May 24 | 🔴 | ✅ | 🧠 | 4.5hrs | 8 | 9.5 | Score variable + Negative frequencies for surplus. |
 
