@@ -18,43 +18,53 @@ public:
         int minLen = INT_MAX;
         string minStr = "";
         int l = 0;
+        int minl = 0;
+        int minr = 0;
         unordered_map<char, int> freqs;
-        unordered_map<char, int> bank;
+        // unordered_map<char, int> bank;
+
         int score = 0;
 
         for (char c : t) {
             freqs[c]++;
-            bank[c] = 0;
         }
 
         for (int r = 0; r < s.size(); ++r) {
             // int currLen = r - l + 1;
-            cout << l << " " << r << endl;
+            // cout << l << " " << r << endl;
 
             if (freqs.count(s[r]))  {
                 // cout << s[r] << ": " << bank[s[r]] << endl; 
-                if (bank[s[r]] < freqs[s[r]]) {
+                if (freqs[s[r]] > 0) {
                     score++;
+                    // cout << "score++: " << score << endl;
                 }
-                bank[s[r]]++;
+                freqs[s[r]]--;
             }
 
             while (score == t.length()) {
                 if (r - l + 1 < minLen) {
                     // cout << "currLen: " << currLen << endl;
                     minLen = r - l + 1;
-                    minStr = s.substr(l, r - l + 1);
-                    cout << "minStr: " << minStr << endl;
+                    minr = r;
+                    minl = l;
+                    // cout << "minStr: " << minStr << endl;
                 }
                 if (freqs.count(s[l])) {
-                    if (bank[s[r]] <= freqs[s[r]]) {
+                    if (freqs[s[l]] >= 0) {
                         score--;
+                        // cout << s[r] << ": " << bank[s[r]] << endl; 
+                        // cout << "score--: " << score << endl;
                     }
 
-                    freqs[s[l]]--;
+                    freqs[s[l]]++;
                 }
                 l++;
             }
+        }
+
+        if (minLen != INT_MAX) {
+            minStr = s.substr(minl, minLen);
         }
 
         return minStr;
