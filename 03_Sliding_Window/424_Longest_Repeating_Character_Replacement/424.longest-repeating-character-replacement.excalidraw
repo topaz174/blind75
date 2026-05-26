@@ -4112,11 +4112,11 @@
       "index": "b1w",
       "roundness": null,
       "seed": 1070004591,
-      "version": 4650,
-      "versionNonce": 938929693,
+      "version": 4652,
+      "versionNonce": 62624860,
       "isDeleted": false,
       "boundElements": [],
-      "updated": 1779560193025,
+      "updated": 1779816486349,
       "link": null,
       "locked": false,
       "text": "window is valid if:\none letter has freq >= size - k\nhow tf do we know that 'one letter' tho thats\nthe issue\nok i have an idea, we keep track of the\nmaximum freq across the windows\nthis max freq is what keeps the window valid\nand obv we keep track of it all with a hashmap\nso for this one, \nmaxfreq = 0\nl=0:\n    while window is valid (maxfreq >= r - l + 1 -\nk), loop r->size\n    r=0:\n        add A to hashmap, freq++ -> freq(a) = 1\n        freq > maxfreq -> maxfreq = 1\n        1 >= 0-0+1-1 = 0\n    r = 1:\n        freq[a]++ -> 2\n        maxfreq = 2\n        2 >= 1 - 0 + 1 - 1 = 1\n    r = 2:\n        add B -> freq[b] = 1\n        maxfreq = 2\n        2 >= 2-0+1-1=2\n    r = 3:\n        freq[a]=3\n        maxfreq = 3\n        3 >= 3\n    r = 4:\n        freq[b] = 2\n        maxfreq = 3\n        3 !>= 4-0+1-1=4 -> stop, slide l in\nl = 1:\nok now how do we deal with decrement\nwell one thing im thinking is, since we know that\nthe max freq char was what validated the\nwindow, if the window is now invalid, we mustve\nrun into a char that isnt that char.\nso i wonder if theres any mathematical\ncertianty that allows u to just maxfreq-- on\nany slide in\nbut no... e.g for ABBBXY k=2, for 0-5 window\nmax freq is 3, but sliding l in to 1 doesnt\ndecrease that\nbut what if we first check if freq[*l] ==\nmaxfreq, if so maxfreq-- and ofc freq[*l]--\nso on ABBBXY -> BBBXY maxfreq = 3, but if it\nbecomes BBXY, freq[B]=maxfreq so maxfreq\nchanges to 2...\nissue is what about smth like ABBBCCCXY k\n=2\non a window like BBCCCXY it wouldve seen\nfreq[B] == maxfreq and wrongly decremented...\ntherefore idt this is worth, unless theres some\nsort of guarantee that this window CANT\nhappen...\nbut it can if k is large enough cant it...\nso i think its easier to just keep track of\nwhich letter is maxfreq along with maxfreq...\nbetter yet, instead of tracking maxfreq we\njust track the letter lol. then we just deref\nthat in the hash map for the freq\nway easier lol\n\n    ...\n    r = 4:\n        maxletter = A, freqs[A] = 3\n        freqs[*r] = freqs[B] = 2\n        freqs[B] !> freqs[maxletter] = 3\n        3 !>= 4-0+1-1=4 -> stop, slide l in\nfreqs[l]-- -> f[A]=2\nl = 1:\n    r = 5:\n        f[r]++ -> f[B] = 3\n        f[B] = 3 > f[ml=A] = 2 -> ml = B\n        3 !>= 5-1+1-1\nf[l=A]-- -> f[A] = 1\nl = 2:\n    r = 6:\n        f[A]++ -> 2\n        2 !> 3\n        3 !>= 6-2+1-1 = 4\nf[B]=2\nl = 3:\n    r = 6:\n        \ni guess the termination condition would be\nwhile (r - l > max)\nnot necessarily stop when r at end, since u\ncould always eventaully find a new max by\nsliding l in even with fixed r\ne,g AAAAEXXXXX k=1\nwait or maybe u can?\ncause u would never end up with a window like\nAEXXXXX would u\nit would only be AAAAEX.... then AAAEX.... until\nEX...\nwhat if its AAALEXXXX (my name lol)\nthen AAALE causes AALE then LE then LEX\nthen EX then EXXXX so yea, i think r at end is\nthe termination",
@@ -4189,7 +4189,7 @@
       "version": 83,
       "versionNonce": 932448509,
       "isDeleted": false,
-      "boundElements": null,
+      "boundElements": [],
       "updated": 1779560191670,
       "link": null,
       "locked": false,
@@ -4521,10 +4521,7 @@
       ],
       "pressures": [],
       "simulatePressure": true,
-      "lastCommittedPoint": [
-        116.74657274866604,
-        -0.28927193777326465
-      ]
+      "lastCommittedPoint": null
     },
     {
       "id": "QziCWEla1AMd416tyValH",
@@ -4549,7 +4546,7 @@
       "version": 82,
       "versionNonce": 1112199507,
       "isDeleted": false,
-      "boundElements": null,
+      "boundElements": [],
       "updated": 1779560191670,
       "link": null,
       "locked": false,
@@ -4877,10 +4874,7 @@
       ],
       "pressures": [],
       "simulatePressure": true,
-      "lastCommittedPoint": [
-        -47.14823883479812,
-        -3.7980747449450973
-      ]
+      "lastCommittedPoint": null
     }
   ],
   "appState": {

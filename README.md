@@ -25,3 +25,13 @@
 | 424 | [Longest Repeating Character Replacement](./03_Sliding_Window/424_Longest_Repeating_Character_Replacement/) | May 24 | 🟡 | ✅ | 🧠 | 7hrs | 9 | 10 | Window valid if (size - maxFreq) <= k. |
 | 076 | [Minimum Window Substring](./03_Sliding_Window/076_Minimum_Window_Substring/) | May 24 | 🔴 | ✅ | 🧠 | 4.5hrs | 8 | 9.5 | Score variable + Negative frequencies for surplus. |
 
+## Chapter 4: Stack
+| ID  | Problem | Date | Diff | Status | Solo? | Time | Diff (10) | Fun (10) | The Core Trick |
+| :-- | :--- | :---: | :--: | :----: | :---: | :--: | :---: | :---: | :--- |
+| 020 | [Valid Parentheses](./04_Stack/020_Valid_Parentheses/) | May 25 | 🟢 | ✅ | 🧠 | 15m | 2 | 7 | Push matching closing bracket to the stack. |
+
+## Chapter 5: Binary Search
+| ID  | Problem | Date | Diff | Status | Solo? | Time | Diff (10) | Fun (10) | The Core Trick |
+| :-- | :--- | :---: | :--: | :----: | :---: | :--: | :---: | :---: | :--- |
+| 153 | [Find Minimum in Rotated Sorted Array](./05_Binary_Search/153_Find_Minimum_in_Rotated_Sorted_Array/) | May 27 | 🟡 | ✅ | 🧠 | 1.5hrs | 6 | 8 | Mid > Right means min is in right half; else left half. |
+
