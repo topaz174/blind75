@@ -33,5 +33,14 @@
 ## Chapter 5: Binary Search
 | ID  | Problem | Date | Diff | Status | Solo? | Time | Diff (10) | Fun (10) | The Core Trick |
 | :-- | :--- | :---: | :--: | :----: | :---: | :--: | :---: | :---: | :--- |
-| 153 | [Find Minimum in Rotated Sorted Array](./05_Binary_Search/153_Find_Minimum_in_Rotated_Sorted_Array/) | May 27 | 🟡 | ✅ | 🧠 | 1.5hrs | 6 | 8 | Mid > Right means min is in right half; else left half. |
+| 153 | [Find Minimum in Rotated Sorted Array](./05_Binary_Search/153_Find_Minimum_in_Rotated_Sorted_Array/) | May 27 | 🟡 | ✅ | 🧠 | 1.5hrs | 6.5 | 8 | Mid > Right means min is in right half; else left half. |
+| 033 | [Search in Rotated Sorted Array](./05_Binary_Search/033_Search_in_Rotated_Sorted_Array/) | May 28 | 🟡 | ✅ | 🧠 | 30m | 4 | 8.5 | Check which half is perfectly sorted, then check if target is inside it. |
 
+## Chapter 6: Linked List
+| ID  | Problem | Date | Diff | Status | Solo? | Time | Diff (10) | Fun (10) | The Core Trick |
+| :-- | :--- | :---: | :--: | :----: | :---: | :--: | :---: | :---: | :--- |
+| 206 | [Reverse Linked List](./06_Linked_List/206_Reverse_Linked_List/) | May 28 | 🟢 | ✅ | 🧠 | 50m | 6 | 6 | Three pointers (prev, curr, next) to flip pointers in-place. |
+| 021 | [Merge Two Sorted Lists](./06_Linked_List/021_Merge_Two_Sorted_Lists/) | May 30 | 🟢 | ✅ | 🧠 | 20m | 2 | 7 | Use a dummy node to anchor the list and a ternary to attach the remainder. |
+| 141 | [Linked List Cycle](./06_Linked_List/141_Linked_List_Cycle/) | May 30 | 🟢 | ✅ | 🧠 | 15m | 4 | 8.5 | Tortoise & Hare (Fast/Slow pointers) or destructive "visited" marking. |
+| 143 | [Reorder List](./06_Linked_List/143_Reorder_List/) | May 30 | 🟡 | ✅ | 🧠 | 1hr | 6 | 8 | Find middle, reverse second half, then merge both halves. |
+| 019 | [Remove Nth Node From End of List](./06_Linked_List/019_Remove_Nth_Node_From_End_of_List/) | May 31 | 🟡 | ✅ | 🧠 | 20m | 4 | 8 | Two pointers (ahead/behind) separated by $n$ nodes; one-pass $O(N)$. |
