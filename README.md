@@ -44,3 +44,13 @@
 | 141 | [Linked List Cycle](./06_Linked_List/141_Linked_List_Cycle/) | May 30 | 🟢 | ✅ | 🧠 | 15m | 4 | 8.5 | Tortoise & Hare (Fast/Slow pointers) or destructive "visited" marking. |
 | 143 | [Reorder List](./06_Linked_List/143_Reorder_List/) | May 30 | 🟡 | ✅ | 🧠 | 1hr | 6 | 8 | Find middle, reverse second half, then merge both halves. |
 | 019 | [Remove Nth Node From End of List](./06_Linked_List/019_Remove_Nth_Node_From_End_of_List/) | May 31 | 🟡 | ✅ | 🧠 | 20m | 4 | 8 | Two pointers (ahead/behind) separated by $n$ nodes; one-pass $O(N)$. |
+| 023 | [Merge k Sorted Lists](./06_Linked_List/023_Merge_K_Sorted_Lists/) | Jun 01 | 🔴 | ✅ | 🧠 | 3hrs | 6 | 8 | Use a min-heap or divide & conquer with 2-way merges. |
+
+## Chapter 7: Trees
+| ID  | Problem | Date | Diff | Status | Solo? | Time | Diff (10) | Fun (10) | The Core Trick |
+| :-- | :--- | :---: | :--: | :----: | :---: | :--: | :---: | :---: | :--- |
+| 226 | [Invert Binary Tree](./07_Trees/226_Invert_Binary_Tree/) | Jun 05 | 🟢 | ✅ | 🧠 | 5m | 2 | 7 | Swap `left` and `right` pointers via post-order traversal. |
+| 104 | [Maximum Depth of Binary Tree](./07_Trees/104_Maximum_Depth_Of_Binary_Tree/) | Jun 05 | 🟢 | ✅ | 🧠 | 1m | 1 | 7 | Recursive `1 + max(left, right)`. |
+| 100 | [Same Tree](./07_Trees/100_Same_Tree/) | Jun 05 | 🟢 | ✅ | 🧠 | 10m | 3 | 7 | Structural equality: compare roots, then recurse left and right. |
+| 572 | [Subtree of Another Tree](./07_Trees/572_Subtree_Of_Another_Tree/) | Jun 05 | 🟢 | ✅ | 🧠 | 1hr | 6 | 8 | For each node, check if it's identical to the subRoot tree. |
+| 235 | [Lowest Common Ancestor of a BST](./07_Trees/235_Lowest_Common_Ancestor_Of_A_Binary_Search_Tree/) | Jun 05 | 🟡 | ✅ | 🧠 | 1.5hr | 6.5 | 8 | Use BST property: if both are `< cur` move left, if both `> cur` move right. |
