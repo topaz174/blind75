@@ -13,17 +13,17 @@
 ## Chapter 2: Two Pointers
 | ID  | Problem | Date | Diff | Status | Solo? | Time | Diff (10) | Fun (10) | The Core Trick |
 | :-- | :--- | :---: | :--: | :----: | :---: | :--: | :---: | :---: | :--- |
-| 125 | [Valid Palindrome](./02_Two_Pointers/125_Valid_Palindrome/) | May 14 | 🟢 | ✅ | 🧠 | 3hrs | 6 | 6.5 | Two pointers skip non-alnum + `f < b`. |
+| 125 | [Valid Palindrome](./02_Two_Pointers/125_Valid_Palindrome/) | May 14 | 🟢 | ✅ | 🧠 | 3hrs | 6 | 6 | Two pointers skip non-alnum + `f < b`. |
 | 015 | [3Sum](./02_Two_Pointers/015_3Sum/) | May 16 | 🟡 | ✅ | 💡 | 7hrs | 9 | 8 | Sort + Two Pointers skip duplicates. |
-| 011 | [Container With Most Water](./02_Two_Pointers/011_Container_With_Most_Water/) | May 21 | 🟡 | ✅ | 🧠 | 45m | 3 | 7.5 | Two pointers, move smaller height. |
+| 011 | [Container With Most Water](./02_Two_Pointers/011_Container_With_Most_Water/) | May 21 | 🟡 | ✅ | 🧠 | 45m | 3 | 7 | Two pointers, move smaller height. |
 
 ## Chapter 3: Sliding Window
 | ID  | Problem | Date | Diff | Status | Solo? | Time | Diff (10) | Fun (10) | The Core Trick |
 | :-- | :--- | :---: | :--: | :----: | :---: | :--: | :---: | :---: | :--- |
-| 121 | [Best Time to Buy and Sell Stock](./03_Sliding_Window/121_Best_Time_To_Buy_And_Sell_Stock/) | May 22 | 🟢 | ✅ | 🧠 | 45m | 3.5 | 7 | Track minPrice so far, update maxProfit. |
-| 003 | [Longest Substring Without Repeating Characters](./03_Sliding_Window/003_Longest_Substring_Without_Repeating_Characters/) | May 23 | 🟡 | ✅ | 🧠 | < 2hrs | 5 | 8 | Sliding window + Set; move `l` past duplicate. |
+| 121 | [Best Time to Buy and Sell Stock](./03_Sliding_Window/121_Best_Time_To_Buy_And_Sell_Stock/) | May 22 | 🟢 | ✅ | 🧠 | 45m | 3.5 | 6.5 | Track minPrice so far, update maxProfit. |
+| 003 | [Longest Substring Without Repeating Characters](./03_Sliding_Window/003_Longest_Substring_Without_Repeating_Characters/) | May 23 | 🟡 | ✅ | 🧠 | 1.5hrs | 5 | 8 | Sliding window + Set; move `l` past duplicate. |
 | 424 | [Longest Repeating Character Replacement](./03_Sliding_Window/424_Longest_Repeating_Character_Replacement/) | May 24 | 🟡 | ✅ | 🧠 | 7hrs | 9 | 10 | Window valid if (size - maxFreq) <= k. |
-| 076 | [Minimum Window Substring](./03_Sliding_Window/076_Minimum_Window_Substring/) | May 24 | 🔴 | ✅ | 🧠 | 4.5hrs | 8 | 9.5 | Score variable + Negative frequencies for surplus. |
+| 076 | [Minimum Window Substring](./03_Sliding_Window/076_Minimum_Window_Substring/) | May 24 | 🔴 | ✅ | 🧠 | 4.5hrs | 8.5 | 9.5 | Score variable + Negative frequencies for surplus. |
 
 ## Chapter 4: Stack
 | ID  | Problem | Date | Diff | Status | Solo? | Time | Diff (10) | Fun (10) | The Core Trick |
@@ -33,14 +33,14 @@
 ## Chapter 5: Binary Search
 | ID  | Problem | Date | Diff | Status | Solo? | Time | Diff (10) | Fun (10) | The Core Trick |
 | :-- | :--- | :---: | :--: | :----: | :---: | :--: | :---: | :---: | :--- |
-| 153 | [Find Minimum in Rotated Sorted Array](./05_Binary_Search/153_Find_Minimum_in_Rotated_Sorted_Array/) | May 27 | 🟡 | ✅ | 🧠 | 1.5hrs | 6.5 | 8 | Mid > Right means min is in right half; else left half. |
-| 033 | [Search in Rotated Sorted Array](./05_Binary_Search/033_Search_in_Rotated_Sorted_Array/) | May 28 | 🟡 | ✅ | 🧠 | 30m | 4 | 8.5 | Check which half is perfectly sorted, then check if target is inside it. |
+| 153 | [Find Minimum in Rotated Sorted Array](./05_Binary_Search/153_Find_Minimum_in_Rotated_Sorted_Array/) | May 27 | 🟡 | ✅ | 🧠 | 1.5hrs | 7 | 8 | Mid > Right means min is in right half; else left half. |
+| 033 | [Search in Rotated Sorted Array](./05_Binary_Search/033_Search_in_Rotated_Sorted_Array/) | May 28 | 🟡 | ✅ | 🧠 | 30m | 5 | 8.5 | Check which half is perfectly sorted, then check if target is inside it. |
 
 ## Chapter 6: Linked List
 | ID  | Problem | Date | Diff | Status | Solo? | Time | Diff (10) | Fun (10) | The Core Trick |
 | :-- | :--- | :---: | :--: | :----: | :---: | :--: | :---: | :---: | :--- |
 | 206 | [Reverse Linked List](./06_Linked_List/206_Reverse_Linked_List/) | May 28 | 🟢 | ✅ | 🧠 | 50m | 6 | 6 | Three pointers (prev, curr, next) to flip pointers in-place. |
-| 021 | [Merge Two Sorted Lists](./06_Linked_List/021_Merge_Two_Sorted_Lists/) | May 30 | 🟢 | ✅ | 🧠 | 20m | 2 | 7 | Use a dummy node to anchor the list and a ternary to attach the remainder. |
+| 021 | [Merge Two Sorted Lists](./06_Linked_List/021_Merge_Two_Sorted_Lists/) | May 30 | 🟢 | ✅ | 🧠 | 20m | 2.5 | 7 | Use a dummy node to anchor the list and a ternary to attach the remainder. |
 | 141 | [Linked List Cycle](./06_Linked_List/141_Linked_List_Cycle/) | May 30 | 🟢 | ✅ | 🧠 | 15m | 4 | 8.5 | Tortoise & Hare (Fast/Slow pointers) or destructive "visited" marking. |
 | 143 | [Reorder List](./06_Linked_List/143_Reorder_List/) | May 30 | 🟡 | ✅ | 🧠 | 1hr | 6 | 8 | Find middle, reverse second half, then merge both halves. |
 | 019 | [Remove Nth Node From End of List](./06_Linked_List/019_Remove_Nth_Node_From_End_of_List/) | May 31 | 🟡 | ✅ | 🧠 | 20m | 4 | 8 | Two pointers (ahead/behind) separated by $n$ nodes; one-pass $O(N)$. |
@@ -49,8 +49,14 @@
 ## Chapter 7: Trees
 | ID  | Problem | Date | Diff | Status | Solo? | Time | Diff (10) | Fun (10) | The Core Trick |
 | :-- | :--- | :---: | :--: | :----: | :---: | :--: | :---: | :---: | :--- |
-| 226 | [Invert Binary Tree](./07_Trees/226_Invert_Binary_Tree/) | Jun 05 | 🟢 | ✅ | 🧠 | 5m | 2 | 7 | Swap `left` and `right` pointers via post-order traversal. |
-| 104 | [Maximum Depth of Binary Tree](./07_Trees/104_Maximum_Depth_Of_Binary_Tree/) | Jun 05 | 🟢 | ✅ | 🧠 | 1m | 1 | 7 | Recursive `1 + max(left, right)`. |
-| 100 | [Same Tree](./07_Trees/100_Same_Tree/) | Jun 05 | 🟢 | ✅ | 🧠 | 10m | 3 | 7 | Structural equality: compare roots, then recurse left and right. |
-| 572 | [Subtree of Another Tree](./07_Trees/572_Subtree_Of_Another_Tree/) | Jun 05 | 🟢 | ✅ | 🧠 | 1hr | 6 | 8 | For each node, check if it's identical to the subRoot tree. |
-| 235 | [Lowest Common Ancestor of a BST](./07_Trees/235_Lowest_Common_Ancestor_Of_A_Binary_Search_Tree/) | Jun 05 | 🟡 | ✅ | 🧠 | 1.5hr | 6.5 | 8 | Use BST property: if both are `< cur` move left, if both `> cur` move right. |
+| 226 | [Invert Binary Tree](./07_Trees/226_Invert_Binary_Tree/) | Jun 02 | 🟢 | ✅ | 🧠 | 5m | 2 | 7 | Swap `left` and `right` pointers via post-order traversal. |
+| 104 | [Maximum Depth of Binary Tree](./07_Trees/104_Maximum_Depth_Of_Binary_Tree/) | Jun 02 | 🟢 | ✅ | 🧠 | 1m | 1 | 7 | Recursive `1 + max(left, right)`. |
+| 100 | [Same Tree](./07_Trees/100_Same_Tree/) | Jun 02 | 🟢 | ✅ | 🧠 | 10m | 3 | 7 | Structural equality: compare roots, then recurse left and right. |
+| 572 | [Subtree of Another Tree](./07_Trees/572_Subtree_Of_Another_Tree/) | Jun 03 | 🟢 | ✅ | 🧠 | 1hr | 6 | 8 | For each node, check if it's identical to the subRoot tree. |
+| 235 | [Lowest Common Ancestor of a BST](./07_Trees/235_Lowest_Common_Ancestor_Of_A_Binary_Search_Tree/) | Jun 04 | 🟡 | ✅ | 🧠 | 1.5hr | 6.5 | 8 | Use BST property: if both are `< cur` move left, if both `> cur` move right. |
+| 102 | [Binary Tree Level Order Traversal](./07_Trees/102_Binary_Tree_Level_Order_Traversal/) | Jun 05 | 🟡 | ✅ | 🧠 | 2hrs | 7 | 8 | Use a `queue` (BFS) and a level-size `toRead` variable to process level-by-level. |
+| 098 | [Validate Binary Search Tree](./07_Trees/098_Validate_Binary_Search_Tree/) | Jun 06 | 🟡 | ✅ | 🧠 | 2hrs | 7.5 | 9 | Pass down `min` and `max` bounds to validate every node against its ancestors. |
+| 230 | [Kth Smallest Element in a BST](./07_Trees/230_Kth_Smallest_Element_In_A_BST/) | Jun 07 | 🟡 | ✅ | 🧠 | 1.5hr | 7 | 8 | In-order traversal (Left, Root, Right) with a counter to find the k-th node. |
+| 105 | [Construct Binary Tree from Preorder and Inorder Traversal](./07_Trees/105_Construct_Binary_Tree_From_Preorder_And_Inorder_Traversal/) | Jun 07 | 🟡 | ✅ | 🧠 | 4hrs | 9 | 8.5 | Use preorder for roots, inorder for left/right boundary splits. |
+| 124 | [Binary Tree Maximum Path Sum](./07_Trees/124_Binary_Tree_Maximum_Path_Sum/) | Jun 10 | 🔴 | ✅ | 🧠 | 1h15m | 6 | 8 | Post-order traversal; track global max path vs returnable branch max. |
+| 297 | [Serialize and Deserialize Binary Tree](./07_Trees/297_Serialize_And_Deserialize_Binary_Tree/) | Jun 10 | 🔴 | ✅ | 🧠 | 1h15m | 6 | 7 | Preorder traversal with "NULL" markers; reconstruct using a queue/stream. |
