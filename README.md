@@ -60,3 +60,14 @@
 | 105 | [Construct Binary Tree from Preorder and Inorder Traversal](./07_Trees/105_Construct_Binary_Tree_From_Preorder_And_Inorder_Traversal/) | Jun 07 | 🟡 | ✅ | 🧠 | 4hrs | 9 | 8.5 | Use preorder for roots, inorder for left/right boundary splits. |
 | 124 | [Binary Tree Maximum Path Sum](./07_Trees/124_Binary_Tree_Maximum_Path_Sum/) | Jun 10 | 🔴 | ✅ | 🧠 | 1h15m | 6 | 8 | Post-order traversal; track global max path vs returnable branch max. |
 | 297 | [Serialize and Deserialize Binary Tree](./07_Trees/297_Serialize_And_Deserialize_Binary_Tree/) | Jun 10 | 🔴 | ✅ | 🧠 | 1h15m | 6 | 7 | Preorder traversal with "NULL" markers; reconstruct using a queue/stream. |
+
+## Chapter 8: Heaps
+| ID  | Problem | Date | Diff | Status | Solo? | Time | Diff (10) | Fun (10) | The Core Trick |
+| :-- | :--- | :---: | :--: | :----: | :---: | :--: | :---: | :---: | :--- |
+| 295 | [Find Median from Data Stream](./08_Heaps/295_Find_Median_From_Data_Stream/) | Jun 14 | 🔴 | ✅ | 🧠 | 2hrs | 8 | 9 | Maintain two heaps (max-heap left, min-heap right) for $O(1)$ median access. |
+
+## Chapter 9: Backtracking
+| ID  | Problem | Date | Diff | Status | Solo? | Time | Diff (10) | Fun (10) | The Core Trick |
+| :-- | :--- | :---: | :--: | :----: | :---: | :--: | :---: | :---: | :--- |
+| 039 | [Combination Sum](./09_Backtracking/039_Combination_Sum/) | Jun 19 | 🟡 | ✅ | 🧠 | 30m | 7 | 8.5 | Recursive DFS: explore including current element vs moving to next to avoid duplicates. |
+| 079 | [Word Search](./09_Backtracking/079_Word_Search/) | Jun 21 | 🟡 | ✅ | 🧠 | 2hrs | 7.5 | 9.5 | DFS Backtracking: Mutate board to track history, restore state after branch, double for-loop to find starts. |
