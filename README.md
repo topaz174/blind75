@@ -71,3 +71,10 @@
 | :-- | :--- | :---: | :--: | :----: | :---: | :--: | :---: | :---: | :--- |
 | 039 | [Combination Sum](./09_Backtracking/039_Combination_Sum/) | Jun 19 | 🟡 | ✅ | 🧠 | 30m | 7 | 8.5 | Recursive DFS: explore including current element vs moving to next to avoid duplicates. |
 | 079 | [Word Search](./09_Backtracking/079_Word_Search/) | Jun 21 | 🟡 | ✅ | 🧠 | 2hrs | 7.5 | 9.5 | DFS Backtracking: Mutate board to track history, restore state after branch, double for-loop to find starts. |
+
+## Chapter 10: Tries
+| ID  | Problem | Date | Diff | Status | Solo? | Time | Diff (10) | Fun (10) | The Core Trick |
+| :-- | :--- | :---: | :--: | :----: | :---: | :--: | :---: | :---: | :--- |
+| 208 | [Implement Trie (Prefix Tree)](./10_Tries/208_Implement_Trie_Prefix_Tree/) | Jun 27 | 🟡 | ✅ | 🧠 | 1h30 | 7 | 7.5 | Use a nested struct with an array of 26 pointers for children. |
+| 211 | [Design Add and Search Words Data Structure](./10_Tries/211_Design_Add_and_Search_Words_Data_Structure/) | Jun 27 | 🟡 | ✅ | 🧠 | 40m | 5 | 6 | Standard Trie + DFS recursion to handle the '.' wildcard. |
+| 212 | [Word Search II](./10_Tries/212_Word_Search_II/) | Jun 27 | 🔴 | ✅ | 🧠 | 1h15m | 7 | 8 | Backtracking integrated with a Trie to prune searches for multiple words. |
