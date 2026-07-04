@@ -78,3 +78,14 @@
 | 208 | [Implement Trie (Prefix Tree)](./10_Tries/208_Implement_Trie_Prefix_Tree/) | Jun 27 | 🟡 | ✅ | 🧠 | 1h30 | 7 | 7.5 | Use a nested struct with an array of 26 pointers for children. |
 | 211 | [Design Add and Search Words Data Structure](./10_Tries/211_Design_Add_and_Search_Words_Data_Structure/) | Jun 27 | 🟡 | ✅ | 🧠 | 40m | 5 | 6 | Standard Trie + DFS recursion to handle the '.' wildcard. |
 | 212 | [Word Search II](./10_Tries/212_Word_Search_II/) | Jun 27 | 🔴 | ✅ | 🧠 | 1h15m | 7 | 8 | Backtracking integrated with a Trie to prune searches for multiple words. |
+
+## Chapter 11: Graphs
+| ID  | Problem | Date | Diff | Status | Solo? | Time | Diff (10) | Fun (10) | The Core Trick |
+| :-- | :--- | :---: | :--: | :----: | :---: | :--: | :---: | :---: | :--- |
+| 200 | [Number of Islands](./11_Graphs/200_Number_of_Islands/) | Jun 27 | 🟡 | ✅ | 🧠 | 1hr | 6 | 7 | BFS/DFS to sink connected land ('1' to '0') to count distinct clusters. |
+| 133 | [Clone Graph](./11_Graphs/133_Clone_Graph/) | Jun 28 | 🟡 | ✅ | 🧠 | 2h15m | 8 | 8 | Use a map (old -> new) to handle cycles and ensure each node is cloned exactly once. |
+| 417 | [Pacific Atlantic Water Flow](./11_Graphs/417_Pacific_Atlantic_Water_Flow/) | Jun 30 | 🟡 | ✅ | 🧠 | 6.5hrs | 9.5 | 8.5 | Work backwards: BFS/DFS from each ocean to see which cells can reach them, then find intersection. |
+| 207 | [Course Schedule](./11_Graphs/207_Course_Schedule/) | Jul 03 | 🟡 | ✅ | 🧠 | 1h30m | 7 | 9 | Topological sort / Cycle detection in directed graph using DFS states or Kahn's algorithm. |
+| 261 | [Graph Valid Tree](./11_Graphs/261_Graph_Valid_Tree/) | Jul 03 | 🟡 | ✅ | 🧠 | 1hr | 6.5 | 8 | A valid tree is fully connected and has no cycles; use Union-Find or DFS. |
+| 323 | [Number of Connected Components in an Undirected Graph](./11_Graphs/323_Number_Of_Connected_Components_In_An_Undirected_Graph/) | Jul 03 | 🟡 | ✅ | 🧠 | 1h30m | 6 | 9 | Union-Find is optimal: start with N components and decrement on successful unions. |
+| 269 | [Alien Dictionary](./11_Graphs/269_Alien_Dictionary/) | Jul 03 | 🔴 | ✅ | 🧠 | 2hrs | 7.5 | 9 | Directed graph built from adjacent word differences + Topological Sort. |
